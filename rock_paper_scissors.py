@@ -18,3 +18,10 @@ def is_win(player, opponent):
         return True
     
 print(play())
+
+while True:
+    # play one round
+    print(play())
+    play_again = input("Play again? (y/n): ")
+    if play_again != "y":
+        break
